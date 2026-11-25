@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#70263D">
+<meta name="description" content="HOOR BEAUTY CLINIC - مركز حور للتجميل والعناية بالبشرة في جدة وبريدة. اكتشفي خدماتنا واحجزي موعدك.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مركز حور للتجميل | HOOR BEAUTY CLINIC">
+<meta property="og:description" content="الجمال بعناية المختصين. اكتشفي خدمات مركز حور للتجميل.">
+<meta property="og:image" content="hoor-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>مركز حور للتجميل | HOOR BEAUTY CLINIC</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--wine:#70263D;
+--wine2:#8F304A;
+--dark:#421827;
+--gold:#C6A56B;
+--cream:#F8F4EF;
+--ivory:#FFFCF8;
+--beige:#E9DCCB;
+--purple:#8D789E;
+--text:#392B2D;
+--muted:#82746E;
+--line:#E8DDD3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--text);font-family:'Tajawal',sans-serif;line-height:1.85}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+img{display:block;width:100%;object-fit:cover}
+.container{width:min(1160px,90%);margin:auto}
+.en{font-family:'Playfair Display',serif;letter-spacing:2px;direction:ltr}
+.gold{color:var(--gold)}
+.top-line{height:4px;background:linear-gradient(90deg,var(--gold),var(--wine),var(--purple))}
+header{position:sticky;top:0;z-index:100;background:#fffcf8f5;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{display:flex;align-items:center;gap:11px;color:var(--wine)}
+.logo-symbol{width:46px;height:46px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font:27px 'Playfair Display';}
+.logo-name{font:800 19px 'Cairo';line-height:1.3}
+.logo-name small{display:block;font:11px 'Playfair Display';letter-spacing:2px;color:var(--gold);direction:ltr}
+.links{display:flex;gap:19px;font-size:14px;font-weight:700}
+.links a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid var(--line);padding:6px 12px;color:var(--wine);font-size:23px}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:11px 24px;background:var(--wine);color:white;border:1px solid var(--wine);font-weight:700;transition:.25s}
+.btn:hover{background:var(--dark);transform:translateY(-2px)}
+.btn-outline{display:inline-flex;padding:11px 24px;border:1px solid var(--gold);color:var(--wine);font-weight:700}
+.btn-outline:hover{background:var(--beige)}
+.eyebrow{font:12px 'Playfair Display';letter-spacing:3px;color:var(--gold)}
+.section-head{text-align:center;padding:75px 0 36px}
+.section-head h2{font:800 clamp(27px,4vw,40px) 'Cairo';color:var(--wine);margin:8px 0}
+.section-head p{color:var(--muted);font-size:16px;max-width:680px;margin:auto}
+.gold-line{height:2px;width:60px;background:var(--gold);margin:16px auto}
+.hero{min-height:620px;position:relative;display:flex;align-items:center;background:var(--dark);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-position:center}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#351321dd,#491a2cc9 55%,#491a2c50)}
+.hero-content{position:relative;z-index:2;color:white;width:min(1160px,90%);margin:auto;padding:90px 0}
+.hero h1{font:800 clamp(38px,6vw,66px)/1.5 'Cairo';margin:18px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:620px;font-size:18px;color:#f5e9e9;margin-bottom:27px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn{background:var(--gold);border-color:var(--gold);color:var(--dark)}
+.hero .btn-outline{color:white;border-color:var(--gold)}
+.hero-location{margin-top:35px;color:#efdee3;font-size:14px}
+.intro{background:var(--wine);color:white;padding:24px 0}
+.intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}
+.intro-grid strong{display:block;color:var(--gold);font:700 17px 'Cairo'}
+.intro-grid span{font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;background:var(--ivory)}
+.about img{height:100%;min-height:430px}
+.about-text{padding:65px clamp(25px,7vw,85px);display:flex;flex-direction:column;justify-content:center}
+.about-text h2{font:800 32px 'Cairo';color:var(--wine);margin:10px 0}
+.about-text p{color:var(--muted);margin-bottom:12px}
+.about-points{display:grid;gap:7px;margin-top:12px;color:var(--wine);font-weight:700}
+.about-points span:before{content:"✦ ";color:var(--gold)}
+.services{padding-bottom:85px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:21px}
+.service-card{background:var(--ivory);border:1px solid var(--line);overflow:hidden;transition:.3s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 15px 30px #70263d18}
+.service-card img{height:225px;transition:.5s}
+.service-card:hover img{transform:scale(1.04)}
+.service-content{padding:21px}
+.service-content small{font:11px 'Playfair Display';letter-spacing:2px;color:var(--gold)}
+.service-content h3{font:700 21px 'Cairo';color:var(--wine);margin:6px 0}
+.service-content p{color:var(--muted);font-size:14px;min-height:52px}
+.service-content button{background:none;border:0;border-bottom:1px solid var(--gold);color:var(--wine);font-weight:800;margin-top:12px;padding-bottom:3px}
+.service-icon{color:var(--purple);font-size:22px}
+.injection{background:var(--dark);color:white;padding-bottom:70px}
+.injection .section-head{padding-top:70px}
+.injection .section-head h2{color:white}
+.injection .section-head p{color:#eadde0}
+.injection-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.injection-card{padding:28px;border:1px solid #c6a56b66;background:#ffffff09}
+.injection-card h3{font:700 23px 'Cairo';color:var(--gold);margin-bottom:10px}
+.injection-card p{color:#efdee3}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}
+.chip{border:1px solid #c6a56b77;padding:6px 12px;color:#f5e9e9;font-size:13px}
+.note{font-size:13px;color:#d9c5ca;margin-top:13px}
+.gallery{padding-bottom:80px}
+.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:15px}
+.gallery-card{height:280px;position:relative;overflow:hidden}
+.gallery-card:first-child{height:380px;grid-row:span 2}
+.gallery-card img{height:100%;transition:.5s}
+.gallery-card:hover img{transform:scale(1.05)}
+.gallery-card:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#27141bcc)}
+.gallery-card span{position:absolute;bottom:17px;right:18px;z-index:2;color:white;font-weight:700;font-size:17px}
+.locations{background:var(--ivory);padding-bottom:80px}
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.location-card{border:1px solid var(--line);background:white}
+.location-card iframe{width:100%;height:250px;border:0}
+.location-info{padding:22px}
+.location-info small{font:11px 'Playfair Display';letter-spacing:2px;color:var(--gold)}
+.location-info h3{font:700 22px 'Cairo';color:var(--wine)}
+.location-info p{color:var(--muted)}
+.location-info a{color:var(--wine);font-weight:700;border-bottom:1px solid var(--gold)}
+.contact{background:var(--wine);color:white;text-align:center;padding:75px 15px}
+.contact h2{font:800 clamp(28px,4vw,40px) 'Cairo';margin:12px 0}
+.contact p{color:#f0dfe3;margin-bottom:15px}
+.phone{display:block;direction:ltr;font:25px 'Playfair Display';color:var(--gold-light,#e8d6b5);margin:15px}
+.contact .btn{background:var(--gold);border-color:var(--gold);color:var(--dark)}
+.contact .btn-outline{color:white}
+footer{background:#351321;color:#f6edef;text-align:center;padding:35px 0 23px}
+.footer-logo{font:800 24px 'Cairo';color:var(--gold-light)}
+footer .en{font-size:12px;color:var(--gold);margin:4px 0 15px}
+footer p{font-size:13px;color:#dccbd0}
+.footer-rule{height:1px;background:#ffffff30;width:min(400px,80%);margin:17px auto}
+.whatsapp{position:fixed;bottom:19px;left:18px;z-index:90;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;color:white;background:#218c61;font-size:27px;box-shadow:0 7px 25px #0003}
+.detail-view{display:none;min-height:70vh;padding-bottom:70px}
+.detail-view.active{display:block}
+.home-view.hidden{display:none}
+.detail-hero{background:var(--dark);color:white;padding:50px 0}
+.detail-hero h1{font:800 clamp(30px,5vw,46px) 'Cairo';margin:8px 0}
+.detail-hero p{color:#efdee3;max-width:700px}
+.back-button{display:inline-block;background:none;border:1px solid var(--gold);color:white;padding:8px 17px;margin-bottom:22px}
+.detail-content{padding-top:40px}
+.detail-content h2{font:700 25px 'Cairo';color:var(--wine);margin:25px 0 10px}
+.detail-content p,.detail-content li{color:var(--muted)}
+.detail-content ul{padding-right:22px}
+.detail-image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:25px 0}
+.detail-image-grid img{height:230px}
+.detail-box{background:var(--ivory);border:1px solid var(--line);padding:22px;margin:18px 0}
+.detail-box h3{font:700 20px 'Cairo';color:var(--wine)}
+.detail-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+@media(max-width:900px){
+.links{display:none;position:absolute;top:78px;right:0;left:0;background:var(--ivory);padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}
+.links.open{display:flex}.menu{display:block}.nav>.btn{display:none}
+.service-grid{grid-template-columns:1fr 1fr}
+.about{grid-template-columns:1fr}.about img{height:330px;min-height:0}
+}
+@media(max-width:600px){
+.hero{min-height:570px}.hero-content{padding:65px 0}
+.intro-grid{grid-template-columns:1fr;gap:17px}
+.service-grid,.injection-grid,.location-grid{grid-template-columns:1fr}
+.gallery-grid{grid-template-columns:1fr 1fr}
+.gallery-card,.gallery-card:first-child{height:220px;grid-row:auto}
+.gallery-card:first-child{grid-column:span 2}
+.detail-image-grid{grid-template-columns:1fr 1fr}
+.detail-image-grid img{height:170px}
+.section-head{padding:58px 0 30px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+
+<body>
+<div class="top-line"></div>
+<header>
+ <div class="container nav">
+  <a href="#" class="logo" onclick="showHome();return false">
+   <span class="logo-symbol">H</span>
+   <span class="logo-name">مركز حور<small>HOOR BEAUTY CLINIC</small></span>
+  </a>
+  <nav class="links" id="links">
+   <a href="#" onclick="showHome();return false">الرئيسية</a>
+   <a href="#about" onclick="showHome()">عن المركز</a>
+   <a href="#services" onclick="showHome()">خدماتنا</a>
+   <a href="#locations" onclick="showHome()">الفروع</a>
+  </nav>
+  <a class="btn" href="https://wa.me/966549488214">احجزي موعدك</a>
+  <button class="menu" id="menu" aria-label="القائمة">☰</button>
+ </div>
+</header>
+
+<div id="homeView" class="home-view">
+<main>
+<section class="hero" id="home">
+ <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85" alt="أجواء داخلية فاخرة">
+ <div class="hero-content">
+  <div class="eyebrow">HOOR BEAUTY CLINIC</div>
+  <h1>جمالكِ حكاية<br><span>نعتني بتفاصيلها</span></h1>
+  <p>في مركز حور للتجميل، نؤمن أن الجمال يبدأ بالعناية والاهتمام. اكتشفي تجربة متكاملة من خدمات البشرة والتجميل والاسترخاء.</p>
+  <div class="hero-actions">
+   <a class="btn" href="https://wa.me/966549488214">احجزي استشارتك</a>
+   <a class="btn-outline" href="#services">اكتشفي خدماتنا</a>
+  </div>
+  <div class="hero-location">جدة – حي الصفا &nbsp; | &nbsp; بريدة – حي الخليج</div>
+ </div>
+</section>
+
+<div class="intro">
+ <div class="container intro-grid">
+  <div><strong>عناية متخصصة</strong><span>اهتمام باحتياجات كل حالة</span></div>
+  <div><strong>تجربة راقية</strong><span>تفاصيل تجمع الجمال والراحة</span></div>
+  <div><strong>خدمات متنوعة</strong><span>خيارات متعددة للعناية بكِ</span></div>
+ </div>
+</div>
+
+<section class="about" id="about">
+ <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1000&q=85" alt="مساحة سبا وعناية راقية" loading="lazy">
+ <div class="about-text">
+  <div class="eyebrow">ABOUT HOOR</div>
+  <h2>الجمال يبدأ من الاهتمام</h2>
+  <p>مركز حور للتجميل والعناية بالبشرة، وجهتكِ لاكتشاف مجموعة من الخدمات التجميلية وجلسات العناية والاسترخاء في أجواء راقية.</p>
+  <p>نحرص على أهمية الاستشارة والتقييم قبل اختيار الإجراءات التجميلية المناسبة لكل حالة.</p>
+  <div class="about-points">
+   <span>خدمات متنوعة للعناية بالبشرة</span>
+   <span>خيارات تجميلية متعددة</span>
+   <span>جلسات مساج واسترخاء</span>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">OUR SERVICES</div>
+   <h2>اكتشفي عالم حور</h2>
+   <div class="gold-line"></div>
+   <p>اختاري القسم الذي ترغبين باكتشافه، واضغطي على البطاقة لعرض التفاصيل والصور.</p>
+  </div>
+  <div class="service-grid" id="serviceGrid"></div>
+ </div>
+</section>
+
+<section class="injection" id="injections">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">BEAUTY INJECTABLES</div>
+   <h2>الإبر التجميلية</h2>
+   <div class="gold-line"></div>
+   <p>تختلف الخيارات بحسب الهدف التجميلي وتقييم الطبيب المختص.</p>
+  </div>
+  <div class="injection-grid">
+   <div class="injection-card">
+    <h3>إبر النضارة | Skin Boosters</h3>
+    <p>خيارات للعناية بترطيب البشرة وتحسين مظهرها وجودتها.</p>
+    <div class="chips">
+     <span class="chip">حمض الهيالورونيك</span>
+     <span class="chip">إبر الترطيب</span>
+     <span class="chip">محفزات الكولاجين</span>
+     <span class="chip">إبر تحسين جودة البشرة</span>
+    </div>
+    <p class="note">يحدد الطبيب المنتج المناسب بعد تقييم البشرة.</p>
+   </div>
+   <div class="injection-card">
+    <h3>الفيلر | Dermal Fillers</h3>
+    <p>خيارات لتجميل وتناسق ملامح الوجه وفق تقييم الطبيب.</p>
+    <div class="chips">
+     <span class="chip">فيلر الشفاه</span>
+     <span class="chip">فيلر الخدود</span>
+     <span class="chip">فيلر الذقن</span>
+     <span class="chip">تحديد الملامح</span>
+    </div>
+    <p class="note">النوع والمادة والمنطقة يحددها الطبيب بعد الاستشارة.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="gallery">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">THE HOOR EXPERIENCE</div>
+   <h2>أناقة المكان وراحة التجربة</h2>
+   <div class="gold-line"></div>
+   <p>مساحات هادئة وتفاصيل أنيقة تلهمكِ للعناية بنفسكِ.</p>
+  </div>
+  <div class="gallery-grid">
+   <div class="gallery-card"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="ديكور راق" loading="lazy"><span>أناقة التفاصيل</span></div>
+   <div class="gallery-card"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=80" alt="سبا" loading="lazy"><span>أجواء من الراحة</span></div>
+   <div class="gallery-card"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="استرخاء" loading="lazy"><span>تجربة عناية</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="locations" id="locations">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">OUR LOCATIONS</div>
+   <h2>فروع مركز حور</h2>
+   <div class="gold-line"></div>
+   <p>يسعدنا استقبال استفساراتكِ للحجز ومعرفة تفاصيل الفروع.</p>
+  </div>
+  <div class="location-grid">
+   <article class="location-card">
+    <iframe title="خريطة جدة" src="https://www.google.com/maps?q=%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B5%D9%81%D8%A7%20%D8%AC%D8%AF%D8%A9&output=embed" loading="lazy"></iframe>
+    <div class="location-info"><small>JEDDAH BRANCH</small><h3>فرع جدة</h3><p>جدة – حي الصفا</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B5%D9%81%D8%A7%20%D8%AC%D8%AF%D8%A9">افتحي الخريطة ←</a></div>
+   </article>
+   <article class="location-card">
+    <iframe title="خريطة بريدة" src="https://www.google.com/maps?q=%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9&output=embed" loading="lazy"></iframe>
+    <div class="location-info"><small>BURAYDAH BRANCH</small><h3>فرع بريدة</h3><p>بريدة – حي الخليج</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9">افتحي الخريطة ←</a></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="contact">
+ <div class="container">
+  <div class="eyebrow">CONTACT HOOR</div>
+  <h2>نحن بانتظار تواصلكِ</h2>
+  <p>للحجز والاستفسار عن الخدمات المتوفرة.</p>
+  <a class="phone" href="tel:+966549488214">+966 54 948 8214</a>
+  <a class="btn" href="https://wa.me/966549488214">تواصلي عبر واتساب</a>
+ </div>
+</section>
+</main>
+</div>
+
+<div id="detailView" class="detail-view">
+ <div class="detail-hero">
+  <div class="container">
+   <button class="back-button" onclick="showHome()">← العودة إلى الصفحة الرئيسية</button>
+   <div class="eyebrow">HOOR BEAUTY CLINIC</div>
+   <h1 id="detailTitle"></h1>
+   <p id="detailIntro"></p>
+  </div>
+ </div>
+ <div class="container detail-content">
+  <div class="detail-image-grid" id="detailImages"></div>
+  <div id="detailDescription"></div>
+  <div class="detail-box">
+   <h3>احجزي استشارتكِ</h3>
+   <p>للاستفسار عن الخدمة والأنواع المتوفرة، تواصلي معنا عبر واتساب.</p>
+   <div class="detail-actions">
+    <a class="btn" href="https://wa.me/966549488214">واتساب 0549488214</a>
+    <button class="btn-outline" onclick="showHome()">العودة للخدمات</button>
+   </div>
+  </div>
+ </div>
+</div>
+
+<footer>
+ <div class="container">
+  <div class="footer-logo">مركز حور للتجميل</div>
+  <div class="en">HOOR BEAUTY CLINIC</div>
+  <div class="footer-rule"></div>
+  <p>جدة – حي الصفا | بريدة – حي الخليج</p>
+  <p>للحجز والاستفسار: 0549488214</p>
+  <p style="margin-top:14px">© <span id="year"></span> جميع الحقوق محفوظة لمركز حور</p>
+ </div>
+</footer>
+<a class="whatsapp" href="https://wa.me/966549488214" target="_blank" rel="noopener" aria-label="واتساب">✆</a>
+
+<script>
+const photo={
+ spa:"https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80",
+ facial:"https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80",
+ skin:"https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80",
+ massage:"https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80",
+ laser:"https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80",
+ hands:"https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80",
+ feet:"https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80",
+ dermapen:"https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80",
+ botox:"https://images.unsplash.com/photo-1619451334792-150fd785ee74?auto=format&fit=crop&w=900&q=80"
+};
+
+const services=[
+{id:"glow",title:"إبر النضارة",en:"SKIN BOOSTERS",img:photo.skin,desc:"خيارات تجميلية للعناية بترطيب البشرة ومظهرها.",intro:"اكتشفي خيارات إبر النضارة والعناية بجودة البشرة.",paragraph:"إبر النضارة اسم يطلق على مجموعة من الإجراءات والمنتجات التي تهدف إلى تحسين ترطيب البشرة ومظهرها. تختلف التركيبات والاستخدامات، ويحدد الطبيب الخيار المناسب بعد فحص البشرة.",items:["إبر حمض الهيالورونيك","إبر الترطيب","محفزات الكولاجين","خيارات تحسين جودة البشرة"],warning:"تختلف النتائج والملاءمة حسب المنتج والحالة. يجب إجراء تقييم طبي قبل الحقن."},
+{id:"botox",title:"البوتوكس",en:"BOTOX",img:photo.botox,desc:"إجراء تجميلي لتخفيف ظهور بعض التجاعيد التعبيرية.",intro:"تعرفي على استخدامات البوتوكس ومعلوماته الأساسية.",paragraph:"البوتوكس مادة دوائية تستخدم في حالات محددة لإرخاء عضلات معينة بصورة مؤقتة، وقد يساعد على تخفيف التجاعيد التعبيرية. يحدد الطبيب المناطق والجرعة المناسبة بعد التقييم.",items:["تجاعيد الجبهة","خطوط ما بين الحاجبين","التجاعيد حول العينين","استخدامات طبية وتجميلية أخرى حسب تقييم الطبيب"],warning:"يُجرى الحقن بواسطة ممارس صحي مؤهل، بعد مناقشة الفوائد والمخاطر."},
+{id:"filler",title:"الفيلر",en:"DERMAL FILLERS",img:photo.facial,desc:"خيارات لتحسين الامتلاء والتناسق في مناطق الوجه.",intro:"تعرفي على أنواع واستخدامات الفيلر التجميلي.",paragraph:"الفيلر مواد تستخدم لإضافة حجم أو تحسين مظهر بعض مناطق الوجه. تختلف المواد ومدة بقائها وخصائصها، ويعتمد الاختيار على المنطقة والتقييم الطبي.",items:["فيلر الشفاه","فيلر الخدود","فيلر الذقن","تحديد بعض ملامح الوجه"],warning:"الحقن إجراء طبي له مخاطر محتملة، ومنها مضاعفات وعائية نادرة وخطيرة."},
+{id:"hydra",title:"الهيدروفيشل",en:"HYDRAFACIAL",img:photo.facial,desc:"جلسة تنظيف وعناية وترطيب للبشرة.",intro:"جلسة تجمع بين التنظيف والعناية بسطح البشرة.",paragraph:"الهيدروفيشل جلسة عناية بالبشرة تستخدم تقنيات وأمصال مخصصة للمساعدة على تنظيف البشرة وإزالة الشوائب وترطيبها.",items:["تنظيف البشرة","تقشير سطحي لطيف","استخراج الشوائب بحسب التقنية","ترطيب البشرة"],warning:"تُحدد ملاءمة الجلسة بحسب حساسية البشرة وحالتها."},
+{id:"dermapen",title:"الديرمابن",en:"DERMAPEN",img:photo.dermapen,desc:"تقنية الوخز الدقيق للعناية بمظهر وملمس البشرة.",intro:"تعرفي على تقنية الوخز الدقيق واستخداماتها.",paragraph:"الديرمابن جهاز يستخدم إبرًا دقيقة لإحداث وخز سطحي مضبوط في الجلد، وقد يُستخدم ضمن بروتوكولات معينة لتحسين مظهر وملمس البشرة.",items:["العناية بمظهر آثار حب الشباب","تحسين ملمس البشرة","التعامل مع بعض الندبات السطحية","بروتوكولات العناية بالبشرة"],warning:"لا تناسب التقنية جميع الحالات، ويجب تجنب استخدامها على الجلد المصاب أو الملتهب."},
+{id:"meso",title:"الميزوثيرابي",en:"MESOTHERAPY",img:photo.skin,desc:"تقنيات وحقن سطحية تختلف موادها وأهدافها.",intro:"تعرفي على مفهوم الميزوثيرابي واستخداماته المختلفة.",paragraph:"الميزوثيرابي مصطلح يشير إلى حقن مواد مختلفة في طبقات الجلد أو تحت الجلد بحسب البروتوكول. تختلف الأدلة والاستخدامات باختلاف المادة والغرض.",items:["بروتوكولات مخصصة للبشرة","تركيبات مختلفة بحسب الاستخدام","تقييم نوع المادة قبل الإجراء"],warning:"لا توجد تركيبة واحدة تناسب الجميع. يجب توضيح المواد المستخدمة ومخاطرها قبل الإجراء."},
+{id:"massage",title:"المساج والعناية بالجسم",en:"MASSAGE & BODY CARE",img:photo.massage,desc:"جلسات متنوعة للاسترخاء والعناية بالجسم.",intro:"اختاري جلسة المساج المناسبة لاحتياجاتكِ.",paragraph:"تختلف أنواع المساج من حيث الضغط والتقنيات والهدف. يجب إبلاغ المختص بأي إصابة أو ألم أو حالة صحية قبل الجلسة.",items:["المساج اللمفاوي","المساج الاسترخائي","المساج السويدي","مساج الأنسجة العميقة","مساج الأحجار الساخنة","مساج الأروماثيرابي","مساج الرأس والرقبة","مساج الظهر"],warning:"المساج اللمفاوي العلاجي يحتاج إلى تقييم مختص، وقد لا يناسب بعض الحالات الصحية."},
+{id:"hands",title:"العناية باليدين",en:"HAND CARE",img:photo.hands,desc:"جلسات عناية وتجميل لليدين والأظافر.",intro:"لأن التفاصيل الصغيرة تصنع فرقاً كبيراً.",paragraph:"تتضمن العناية باليدين خطوات تجميلية للمحافظة على مظهر اليدين والأظافر وترطيبهما.",items:["مانيكير","ترطيب اليدين","تقشير اليدين","العناية بالأظافر","عناية تجميلية بالكيوتكل"],warning:"يجب استخدام أدوات نظيفة ومعقمة وتجنب العمل على الجلد المصاب."},
+{id:"feet",title:"العناية بالقدمين",en:"FOOT CARE",img:photo.feet,desc:"جلسات عناية وتجميل وترطيب للقدمين.",intro:"امنحي قدميكِ عناية تستحقانها.",paragraph:"تساعد جلسات العناية التجميلية بالقدمين على تنظيف وترطيب القدمين وتحسين مظهر الأظافر والجلد.",items:["بديكير","ترطيب القدمين","تقشير القدمين","العناية بالأظافر","جلسات عناية مريحة للقدمين"],warning:"مشكلات القدم الطبية أو الجروح والالتهابات تحتاج إلى تقييم طبي وليس مجرد جلسة تجميلية."},
+{id:"laser",title:"الليزر وإزالة الشعر",en:"LASER TECHNOLOGY",img:photo.laser,desc:"خيارات ليزر لإزالة الشعر بحسب نوع البشرة والشعر.",intro:"تعرفي على تقنيات الليزر واختيار الأنسب لحالتك.",paragraph:"تعتمد إزالة الشعر بالليزر على استهداف صبغة الشعر باستخدام طاقة ضوئية. تختلف الأجهزة والأطوال الموجية وملاءمتها حسب لون البشرة والشعر.",items:["Alexandrite 755 nm","Nd:YAG 1064 nm","تقنيات ليزر مختلفة حسب الجهاز","تقييم لون البشرة ونوع الشعر قبل الجلسة"],warning:"يجب تأكيد موديلات الأجهزة الموجودة فعلياً في المركز، وتقييم البشرة قبل تحديد الإعدادات."}
+];
+
+const grid=document.getElementById("serviceGrid");
+services.forEach((s,i)=>{
+ const card=document.createElement("article");
+ card.className="service-card";
+ card.innerHTML=`
+ <img src="${s.img}" alt="${s.title}" loading="lazy">
+ <div class="service-content">
+ <small>${String(i+1).padStart(2,"0")} · ${s.en}</small>
+ <h3>${s.title}</h3>
+ <p>${s.desc}</p>
+ <button type="button" onclick="openService('${s.id}')">اكتشفي التفاصيل ←</button>
+ </div>`;
+ grid.appendChild(card);
+});
+
+function openService(id){
+ const s=services.find(item=>item.id===id);
+ if(!s)return;
+ document.getElementById("homeView").classList.add("hidden");
+ document.getElementById("detailView").classList.add("active");
+ document.getElementById("detailTitle").textContent=s.title;
+ document.getElementById("detailIntro").textContent=s.intro;
+ document.getElementById("detailImages").innerHTML=[s.img,photo.facial,photo.spa].map((src,i)=>`<img src="${src}" alt="${s.title}" loading="lazy">`).join("");
+ document.getElementById("detailDescription").innerHTML=`
+ <h2>عن الخدمة</h2>
+ <p>${s.paragraph}</p>
+ <h2>الأنواع والاستخدامات</h2>
+ <ul>${s.items.map(item=>`<li>${item}</li>`).join("")}</ul>
+ <div class="detail-box"><h3>معلومة مهمة</h3><p>${s.warning}</p></div>`;
+ window.scrollTo({top:0,behavior:"smooth"});
+ history.replaceState(null,"","#"+id);
+}
+function showHome(){
+ document.getElementById("detailView").classList.remove("active");
+ document.getElementById("homeView").classList.remove("hidden");
+ history.replaceState(null,"",location.pathname);
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+document.getElementById("menu").addEventListener("click",()=>{
+ document.getElementById("links").classList.toggle("open");
+});
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>{
+ document.getElementById("links").classList.remove("open");
+}));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
